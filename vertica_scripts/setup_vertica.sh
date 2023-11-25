@@ -8,6 +8,9 @@ DB_CONFIG_FILE="/home/dbadmin/verticaDB.conf"
 
 
 # Initialize Vertica
+echo 'Stopping VMart'
+$VERTICA_BIN_DIR/adminTools -t stop_db -d VMart -i
+
 echo 'Initializing Vertica...'
 /opt/vertica/sbin/install_vertica --hosts $DB_NODES --failure-threshold NONE
 
