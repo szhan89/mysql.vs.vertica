@@ -36,4 +36,7 @@ This is a repository for CS 511 - Advanced Data Management Project 4. In this re
 
   ### Show Tables In TPCH database
   `sudo docker exec -it mysql-server mysql -uroot -proot -e "SHOW TABLES IN TPCH;"`
-   
+
+---
+
+# Vertica Container Configuration:
