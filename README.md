@@ -40,3 +40,20 @@ This is a repository for CS 511 - Advanced Data Management Project 4. In this re
 ---
 
 # Vertica Container Configuration:
+1. Start with a new fresh Vertica Image: `sudo docker pull vertica/vertica-ce`
+2. Created a container named vertica_container
+   `sudo docker run -p 5433:5433 --name vertica_container -d vertica/vertica-ce`
+3. Bash into the container just created. `docker exec -it vertica_container /bin/bash`
+4. Make a new folder in the current directory using command in bash: `mkdir scripts`
+5. Open a new terminal and execute the following command
+   `chmod +x vertica_scripts/copy_file.sh`
+   `sudo ./vertica_scripts/copy_file.sh`
+   These command copy the scripts needed for setting up vertica database.
+6. Go back to the original terminal with the container bash and execute the following command
+   `chmod +x setup_vertica.sh`
+   `./setup_vertica.sh`
+   One thing to be careful is the node of the database may be different based on the machines. you can use `/opt/vertica/bin/admintools -t list_allnodes` to check the name of your node.
+7. If you have used dbgen to create tbl files for data, you can now make tables in your vertica DB using the following command
+   `chmod +x setup_tpch_schema.sh`
+   `./setup_tpch_schema.sh`
+Now you are all set to test TPCH queries using vertica DB, the time of execution for each query will be displayed in the end of each successful execution.
