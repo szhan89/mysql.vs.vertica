@@ -58,5 +58,7 @@ This is a repository for CS 511 - Advanced Data Management Project 4. In this re
    `./setup_tpch_schema.sh`
 Now you are all set to test TPCH queries using vertica DB, the time of execution for each query will be displayed in the end of each successful execution.
 
-# Datas
+# Datas (Vertica)
 https://docs.google.com/document/d/1IvXfwMJTjpJW4Nn_YcEuh4OTt7QMs_KpJncgJw2AAdw/edit?usp=sharing
+
+# Datas (MySQL)
