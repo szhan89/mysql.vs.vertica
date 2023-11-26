@@ -62,3 +62,4 @@ Now you are all set to test TPCH queries using vertica DB, the time of execution
 https://docs.google.com/document/d/1IvXfwMJTjpJW4Nn_YcEuh4OTt7QMs_KpJncgJw2AAdw/edit?usp=sharing
 
 # Datas (MySQL)
+https://docs.google.com/document/d/1k4o7Kje2w7os2JuGqle4wDLOf6q5P5H7eEoulvujdHY/edit?usp=sharing
