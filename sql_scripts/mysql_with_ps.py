@@ -6,8 +6,8 @@ MYSQL_PASSWORD = "root"
 DATABASE_NAME = "TPCH"
 DOCKER_CONTAINER_NAME = "mysql-server"
 QUERY_DIR = "/etc/tpch/queries"
-SQL_FILES = ["1.sql", "2.sql", "3.sql", "4.sql", "5.sql", "6.sql", "7.sql", "8.sql", "9.sql", "10.sql", "11.sql", "12.sql", "13.sql", "14.sql", "15.sql", "16.sql", "17.sql", "18.sql", "19.sql", "20.sql", "21.sql", "22.sql"] # Update with your SQL file names
-#SQL_FILES = ["1.sql", "2.sql"]
+#SQL_FILES = ["1.sql", "2.sql", "3.sql", "4.sql", "5.sql", "6.sql", "7.sql", "8.sql", "9.sql", "10.sql", "11.sql", "12.sql", "13.sql", "14.sql", "15.sql", "16.sql", "17.sql", "18.sql", "19.sql", "20.sql", "21.sql", "22.sql"] # Update with your SQL file names
+SQL_FILES = ["1.sql", "3.sql", "7.sql", "14.sql","19.sql"]
 def print_formatted_stats(stats):
     lines = stats.strip().split('\n')
     headers = lines[0].split(maxsplit=7)  # Adjusting maxsplit based on the actual number of columns

@@ -2,7 +2,7 @@
 sudo docker exec mysql-server mkdir -p /etc/tpch
 sudo docker exec mysql-server mkdir -p /etc/tpch/queries
 
-for file in /etc/tpch/*.tbl; do
+for file in /home/cs511/workplace/TPCH/dbgen/*.tbl; do
     sudo docker cp "$file" mysql-server:/etc/tpch/
 done
 
